@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "dart-assistant",
+  "private_key_id": "c48c95ff6938d566313cb8bdb5675066e79002e9",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDw50NmPnjqJ0X9\nLYgaHhTH2TmhSEUccuo6yMgHI1Qdbqf1gYmRtF2SOrKYT3XGtNP7jD3WTHLEI6ok\nYEQaSp1MicK8AGsyqevAbgZWNCYsD/NzfBSJPszlD9VwbtX+YW4vfZoD3pW88B7j\njWsPs26tECyMdzd3Ax0QbRxu4Mm5wBKHzuW3W0J1rGshRsS/RpNY8n6PGFOBwiDA\nPnwqwb9NJAY6qZPcCE//u7lmwkhstffT2/TAG8ih1yXkotZl7rrYhvDew4xz5aCa\nyEo+x+tJc3XVeq22ginG3rVHQpTeCZlNHMWF5GUU8yR7+hkcO1P1kt+FrgYPEd1s\nZ9eGC2H/AgMBAAECggEAbbqxSROgqOtdpl5Edb0I8yTfarbMABLZ3Q/SiOnPKR7b\ns2ifHHae/nntGpJrD6kTO6ucCQ5GYk/qcmpE6wLcll3TjSXVrjyWzU5wZXiYgI59\ncjds9TzdQGMPcgiSQa3obgpUinmrE+X98+FZCExPV9YbrJmq8nNBHFfO0TRjvk67\n81z5alDHXWle+dtFGHiUizg8Xo8ayzpykaW9yp8JcPXrlZ6j/T4D+pD+5scQe52V\n+4YnCqYPLuIXRXP+8q9epVlxSROS+SvJCsAd9ersFSwoMv5TlOTEqVuiECX3nghQ\njSpdERmccoapMhgd+dGKLReaCWRIXu7/8tTWm2ScXQKBgQD+v+kXWJ5D7Ff3Ib68\nImmR/yFkbjRRdbHpZe7Stdr5IhUakUrxUBXuxjpFpVCB8OHTsP/mhezQSPlyn54W\nFBf6SrtpJinKKmiYz3K4s+Vc5zCp2+Bd3k9gI1HuBMq6ZrOwb1CJJvtgoeOMuEsO\nAW7N6xSWFjiHcI7gEtCmrQXQkwKBgQDyFfSBxeG/oI0UeZALONV3j6hPgpyniiwm\nN7E/DcVDgNfRBCwjyfz+pTJANEqnl5nLg1lPAZQB1AHz/IMmi7bQJ9hqA7D+nZfa\niiB9vroCh3XrChxmzv9z2ZVZvGPL8FPeLUZMGEHRt94myxyr2qBOkUFMj7Jm4BID\nZtD3ZYaIZQKBgQCLEbcssIsNp3tKBVj7mYmqUu4mxma3RZoPQT9ENlTJBosgyspv\nu/mNNRfgp2Ow3BBcIVdBwEDMX9oVcf+6K9P/JkbzGwtbOxWIvk7xd/uxYOBXChqN\nA+yvHfj/CAyn/6L+oXYEuYwnb5kqW/1VMwELVtcRLCZGAfNtbbgMFY6EEwKBgDd8\nWr9HyJcwSEWyGxbHXv35Wj1nFVq9K6NSznhCQr1XEaAhkbBeQnNnD55xnc7Ny30+\nzMBz/yVwH0Z50OGL0knhaBPcZrvlCQIY+Jt5lI6x15AYkCvsM9asvzODH2iF2+Mn\ng147jRJxTySbFyY4hNedKVdP9DbqEpbfAPRDO9OVAoGAP4taVEYfwcPm0YvoYr6m\nEh6yJCuKhWeEvCRqAWLZvxyCze4Mt/mNdT3cEcOuAYnViiZKQhzVa19zBO0rVKcD\nIHv8qIAXoVdPdzNgnKKIoYc78Bron8syreWLRkX69joqR/l4XLZhbz0r9uL7DOOF\nlCQ+l9F/hy/kph/6LtzJcVE=\n-----END PRIVATE KEY-----\n",
+  "client_email": "speech-to-text@dart-assistant.iam.gserviceaccount.com",
+  "client_id": "100098601412643470624",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/speech-to-text%40dart-assistant.iam.gserviceaccount.com"
+}
