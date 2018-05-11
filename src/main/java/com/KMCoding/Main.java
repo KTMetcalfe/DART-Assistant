@@ -30,6 +30,8 @@ public class Main extends Application{
         launch(args);
     }
 
+    public static ListView listChat = new ListView();
+
     @Override
     public void start(Stage primaryStage) {
         qInput = new TextField();
@@ -58,11 +60,11 @@ public class Main extends Application{
         listOut.setId("Output");
         GridPane.setConstraints(listOut,1,1);
 
-        IRCBot.listChat.setId("Chat");
-        GridPane.setConstraints(IRCBot.listChat,2,1);
+        listChat.setId("Chat");
+        GridPane.setConstraints(listChat,2,1);
 
         layout = new GridPane();
-        layout.getChildren().addAll(qInput, qSubmit, listIn, listOut, IRCBot.listChat);
+        layout.getChildren().addAll(qInput, qSubmit, listIn, listOut, listChat);
 
         scene = new Scene(layout, screenWidth, screenHeight);
 

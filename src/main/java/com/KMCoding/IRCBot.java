@@ -1,6 +1,5 @@
 package com.KMCoding;
 
-import javafx.scene.control.ListView;
 import org.jibble.pircbot.PircBot;
 
 public class IRCBot extends PircBot {
@@ -13,14 +12,12 @@ public class IRCBot extends PircBot {
         bot.joinChannel("#" + ircChannel);
     }
 
-    public static ListView listChat = new ListView();
-
+    @Override
     public void onMessage(String channel, String sender, String login, String hostname, String message) {
-        listChat.getItems().add(0, message);
-        if (listChat.getItems().size() > 32) {
-            listChat.getItems().clear();
+        Main.listChat.getItems().add(0, message);
+        if (Main.listChat.getItems().size() > 32) {
+            Main.listChat.getItems().clear();
         }
-
 
         if (message.equalsIgnoreCase("+debug") && sender.equalsIgnoreCase("redtek720")) {
             sendMessage(channel, channel + " " + sender + " " + login + " " + hostname + " " + message);
