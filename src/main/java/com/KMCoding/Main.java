@@ -9,7 +9,6 @@ import javafx.scene.control.ListView;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Screen;
 import javafx.stage.Stage;
-import org.jibble.pircbot.IrcException;
 
 public class Main extends Application{
 
