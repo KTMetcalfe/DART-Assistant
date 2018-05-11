@@ -19,9 +19,9 @@ public class IRCBot extends PircBot {
             Main.listChat.getItems().clear();
         }
 
-        if(message.startsWith("+"))
-            sendMessage(channel, "@" + sender + ", " + Commands.Main(message));
         if (message.equalsIgnoreCase("+debug") && sender.equalsIgnoreCase("redtek720"))
             sendMessage(channel, channel + " " + sender + " " + login + " " + hostname + " " + message);
+        else if (message.startsWith("+"))
+            sendMessage(channel, "@" + sender + ", " + Commands.Main(message).replace('+', ' '));
     }
 }

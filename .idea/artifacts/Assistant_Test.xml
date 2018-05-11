@@ -1,0 +1,21 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="Assistant Test">
+    <output-path>$PROJECT_DIR$/out/artifacts/Assistant_Test</output-path>
+    <properties id="javafx-properties">
+      <options>
+        <option name="appClass" value="com.KMCoding.Main" />
+        <option name="description" value="" />
+        <option name="htmlPlaceholderId" value="" />
+        <option name="title" value="" />
+        <option name="vendor" value="" />
+        <option name="version" value="" />
+      </options>
+    </properties>
+    <root id="root">
+      <element id="archive" name="Assistant_Test.jar">
+        <element id="module-output" name="Assistant Test" />
+      </element>
+      <element id="library" level="project" name="Maven: pircbot:pircbot:1.5.0" />
+    </root>
+  </artifact>
+</component>

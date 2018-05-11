@@ -73,7 +73,7 @@ public class Main extends Application {
     }
 
     private void closeDART() {
+        System.exit(0);
         System.out.println("Closed properly");
-        DART.close();
     }
 }
