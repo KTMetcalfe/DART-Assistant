@@ -66,7 +66,7 @@ public class Main extends Application {
         scene = new Scene(layout, screenWidth, screenHeight);
 
         DART = primaryStage;
-        DART.setTitle("DART 2.0");
+        DART.setTitle("DART 1.0");
         DART.setScene(scene);
         DART.show();
         DART.setOnCloseRequest(event -> closeDART());

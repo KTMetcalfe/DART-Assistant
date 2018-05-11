@@ -18,7 +18,7 @@ AppPublisher={#MyAppPublisher}
 DefaultDirName={pf}\{#MyAppName}
 DisableProgramGroupPage=yes
 OutputDir=C:\Users\kmetc\Google Drive\IntelliJ\Projects\Assistant Test
-OutputBaseFilename=setup
+OutputBaseFilename=DARTInstaller
 Compression=lzma
 SolidCompression=yes
 
