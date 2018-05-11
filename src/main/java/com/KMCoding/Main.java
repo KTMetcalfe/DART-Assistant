@@ -9,8 +9,9 @@ import javafx.scene.control.ListView;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Screen;
 import javafx.stage.Stage;
+import org.jibble.pircbot.IrcException;
 
-public class Main extends Application {
+public class Main extends Application{
 
     Stage DART;
     Scene scene;
@@ -24,7 +25,8 @@ public class Main extends Application {
     double screenWidth = screenRes.getWidth()/2;
     double screenHeight = screenRes.getHeight()/2;
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
+        IRCBot.main("redtek720");
         launch(args);
     }
 
@@ -56,8 +58,11 @@ public class Main extends Application {
         listOut.setId("Output");
         GridPane.setConstraints(listOut,1,1);
 
+        IRCBot.listChat.setId("Chat");
+        GridPane.setConstraints(IRCBot.listChat,2,1);
+
         layout = new GridPane();
-        layout.getChildren().addAll(qInput, qSubmit, listIn, listOut);
+        layout.getChildren().addAll(qInput, qSubmit, listIn, listOut, IRCBot.listChat);
 
         scene = new Scene(layout, screenWidth, screenHeight);
 
