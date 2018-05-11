@@ -4,13 +4,17 @@ import javafx.application.Application;
 import javafx.geometry.Rectangle2D;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.control.TextField;
 import javafx.scene.control.ListView;
+import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Screen;
 import javafx.stage.Stage;
 
-public class Main extends Application{
+public class Main extends Application {
+    public static void main(String[] args) throws Exception {
+        IRCBot.main("redtek720");
+        launch(args);
+    }
 
     Stage DART;
     Scene scene;
@@ -24,14 +28,8 @@ public class Main extends Application{
     double screenWidth = screenRes.getWidth()/2;
     double screenHeight = screenRes.getHeight()/2;
 
-    public static void main(String[] args) throws Exception {
-        IRCBot.main("redtek720");
-        launch(args);
-    }
-
     public static ListView listChat = new ListView();
 
-    @Override
     public void start(Stage primaryStage) {
         qInput = new TextField();
         qInput.setPromptText("Type question");
