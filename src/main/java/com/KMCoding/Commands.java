@@ -29,6 +29,9 @@ public class Commands {
             return ("I can't have feelings, Kian thought it would be best if I stay non-sentient.");
         if (q.contains("what") && q.contains("up"))
             return ("Just doing some complex algorithms.");
-        else return "";
+        if (q.startsWith("ircjoin ")) {
+            String ircChannel = q.replace("ircjoin ", "");
+            return ("WIP - Joined Channel " + ircChannel);
+        } else return "";
     }
 }

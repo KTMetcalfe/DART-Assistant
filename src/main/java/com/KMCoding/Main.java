@@ -12,7 +12,7 @@ import javafx.stage.Stage;
 
 public class Main extends Application {
     public static void main(String[] args) throws Exception {
-        IRCBot.main("redtek720");
+        IRCBot.main();
         launch(args);
     }
 

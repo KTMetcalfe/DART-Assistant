@@ -3,13 +3,13 @@ package com.KMCoding;
 import org.jibble.pircbot.PircBot;
 
 public class IRCBot extends PircBot {
-    public static void main(String ircChannel) throws Exception {
+    public static void main() throws Exception {
         IRCBot bot = new IRCBot();
 
         bot.setVerbose(true);
         bot.setName("mrbottek");
         bot.connect("irc.chat.twitch.tv", 6667, "oauth:kqfdosubw4bpatt2cu1i4u467r3gw9");
-        bot.joinChannel("#" + ircChannel);
+        bot.joinChannel("#default");
     }
 
     @Override
@@ -21,7 +21,11 @@ public class IRCBot extends PircBot {
 
         if (message.equalsIgnoreCase("+debug") && sender.equalsIgnoreCase("redtek720"))
             sendMessage(channel, channel + " " + sender + " " + login + " " + hostname + " " + message);
+        else if (message.startsWith("+ircjoin "))
+            joinChannel("#" + message.replace("+ircjoin ", ""));
+        else if (message.startsWith("+say"))
+            sendMessage(channel, message.replace("+say ", ""));
         else if (message.startsWith("+"))
-            sendMessage(channel, "@" + sender + ", " + Commands.Main(message).replace('+', ' '));
+            sendMessage(channel, "@" + sender + ", " + Commands.Main(message).replace("+", ""));
     }
 }
