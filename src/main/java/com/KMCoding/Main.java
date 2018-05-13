@@ -45,7 +45,7 @@ public class Main extends Application {
             }
 
             listIn.getItems().add(0, qInput.getCharacters().toString());
-            listOut.getItems().add(0, Commands.Main(qInput.getCharacters().toString()));
+            listOut.getItems().add(0, Commands.main(qInput.getCharacters().toString()));
             qInput.clear();
         });
 

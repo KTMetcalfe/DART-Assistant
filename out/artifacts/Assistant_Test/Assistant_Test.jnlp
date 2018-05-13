@@ -8,7 +8,7 @@
     <update check="background"/>
     <resources>
         <j2se version="10.0.1+" href="http://java.sun.com/products/autodl/j2se"/>
-        <jar href="Assistant_Test.jar" size="7312" download="eager"/>
+        <jar href="Assistant_Test.jar" size="7498" download="eager"/>
         <jar href="pircbot-1.5.0.jar" size="63366" download="eager"/>
     </resources>
     <jfx:javafx-desc width="600" height="400" main-class="com.KMCoding.Main" name="Main"/>

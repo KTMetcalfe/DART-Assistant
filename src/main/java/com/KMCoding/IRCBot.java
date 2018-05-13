@@ -9,8 +9,10 @@ public class IRCBot extends PircBot {
         bot.setVerbose(true);
         bot.setName("mrbottek");
         bot.connect("irc.chat.twitch.tv", 6667, "oauth:kqfdosubw4bpatt2cu1i4u467r3gw9");
-        bot.joinChannel("#default");
+        bot.joinChannel("#redtek720");
     }
+
+    IRCCommands commands = new IRCCommands();
 
     @Override
     public void onMessage(String channel, String sender, String login, String hostname, String message) {
@@ -18,14 +20,6 @@ public class IRCBot extends PircBot {
         if (Main.listChat.getItems().size() > 32) {
             Main.listChat.getItems().clear();
         }
-
-        if (message.equalsIgnoreCase("+debug") && sender.equalsIgnoreCase("redtek720"))
-            sendMessage(channel, channel + " " + sender + " " + login + " " + hostname + " " + message);
-        else if (message.startsWith("+ircjoin "))
-            joinChannel("#" + message.replace("+ircjoin ", ""));
-        else if (message.startsWith("+say"))
-            sendMessage(channel, message.replace("+say ", ""));
-        else if (message.startsWith("+"))
-            sendMessage(channel, "@" + sender + ", " + Commands.Main(message).replace("+", ""));
+        commands.main(channel, sender, login, hostname, message);
     }
 }
