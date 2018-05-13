@@ -12,14 +12,19 @@ public class IRCBot extends PircBot {
         bot.joinChannel("#redtek720");
     }
 
-    IRCCommands commands = new IRCCommands();
-
     @Override
     public void onMessage(String channel, String sender, String login, String hostname, String message) {
         Main.listChat.getItems().add(0, message);
         if (Main.listChat.getItems().size() > 32) {
             Main.listChat.getItems().clear();
         }
-        commands.main(channel, sender, login, hostname, message);
+        if (message.equalsIgnoreCase("+debug") && sender.equalsIgnoreCase("redtek720"))
+            sendMessage(channel, channel + " " + sender + " " + login + " " + hostname + " " + message);
+        else if (message.startsWith("+ircjoin "))
+            joinChannel(message.replace("+ircjoin ", ""));
+        else if (message.startsWith("+say"))
+            sendMessage(channel, message.replace("+say ", ""));
+        else if (message.startsWith("+"))
+            sendMessage(channel, "@" + sender + ", " + Commands.main(message).replace("+", ""));
     }
 }

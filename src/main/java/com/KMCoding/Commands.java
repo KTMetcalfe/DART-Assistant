@@ -1,11 +1,11 @@
 package com.KMCoding;
 
 public class Commands {
-    public static String main(String question) {
+    public static String main(String question){
         String q;
         q = question.toLowerCase();
 
-        IRCCommands join = new IRCCommands();
+        IRCBot bot = new IRCBot();
 
         if ((q.contains("hi") || q.contains("hey") || q.contains("hello")) && !q.contains("to")) {
             if (!q.contains("time") && !q.contains("date"))
@@ -32,7 +32,7 @@ public class Commands {
         if (q.contains("what") && q.contains("up"))
             return ("Just doing some complex algorithms.");
         if (q.startsWith("ircjoin ")) {
-            join.joinIRC(q);
+            bot.joinChannel(q.replace("ircjoin ", ""));
             return ("Joined Channel " + q.replace("ircjoin ", ""));
         } else return "";
     }
