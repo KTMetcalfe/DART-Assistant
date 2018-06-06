@@ -2,13 +2,22 @@ package com.KMCoding;
 
 import org.jibble.pircbot.PircBot;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+
 public class IRCBot extends PircBot {
+    /**If you get any issues just comment out IRCBot.main in the main method of Main*/
+
     public static void main() throws Exception {
+        File token = new File("C:\\Users\\kmetc\\Google Drive\\IntelliJ\\Projects\\token.txt");
+        BufferedReader tokenReader = new BufferedReader(new FileReader(token));
+
         IRCBot bot = new IRCBot();
 
         bot.setVerbose(true);
         bot.setName("mrbottek");
-        bot.connect("irc.chat.twitch.tv", 6667, "oauth:kqfdosubw4bpatt2cu1i4u467r3gw9");
+        bot.connect("irc.chat.twitch.tv", 6667, "oauth:"+tokenReader.readLine());
         bot.joinChannel("#default");
     }
 

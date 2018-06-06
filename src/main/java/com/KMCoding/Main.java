@@ -12,6 +12,8 @@ import javafx.stage.Stage;
 
 public class Main extends Application {
     public static void main(String[] args) throws Exception {
+        /**If you get any issues just comment out IRCBot.main*/
+
         IRCBot.main();
         launch(args);
     }
