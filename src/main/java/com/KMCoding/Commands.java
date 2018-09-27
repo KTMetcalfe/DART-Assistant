@@ -5,6 +5,7 @@ public class Commands {
         String q;
         q = question.toLowerCase();
 
+        //TODO keep adding more commands and feature
         if ((q.contains("hi") || q.contains("hey") || q.contains("hello")) && !q.contains("to")) {
             if (!q.contains("time") && !q.contains("date"))
                 return ("Hey! How's it going?");
@@ -29,6 +30,7 @@ public class Commands {
             return ("I can't have feelings, Kian thought it would be best if I stay non-sentient.");
         if (q.contains("what") && q.contains("up"))
             return ("Just doing some complex algorithms.");
+        //TODO fix join channel for irc
         if (q.startsWith("ircjoin ")) {
             String ircChannel = q.replace("ircjoin ", "");
             return ("WIP - Joined Channel " + ircChannel);

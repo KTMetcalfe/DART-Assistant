@@ -17,7 +17,7 @@ public class IRCBot extends PircBot {
 
         bot.setVerbose(true);
         bot.setName("mrbottek");
-        bot.connect("irc.chat.twitch.tv", 6667, "oauth:"+tokenReader.readLine());
+        bot.connect("irc.chat.twitch.tv", 6667, "oauth:" + tokenReader.readLine());
         bot.joinChannel("#default");
     }
 
